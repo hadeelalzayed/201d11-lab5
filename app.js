@@ -14,6 +14,7 @@ var result = a+b;
 var msg = [`The sum of ${a} and ${b} is ${result}.`];
 var sumArr = [result,msg[0]]
 return sumArr;
+
 console.log(sum(4,7));
 }
 // Here is the test for sum(); uncomment it to run it
