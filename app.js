@@ -11,8 +11,9 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { //eslint-disable-line
 var result = a+b;
 var msg = [`The sum of ${a} and ${b} is ${result}.`];
-var sumArr = [result,msg]
+var sumArr = [result,msg[0]]
 return sumArr;
+// return [result, `The sum of ${a} and ${b} is ${result}.`]
 }
 console.log(sum(4,7));
 
