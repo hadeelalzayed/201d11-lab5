@@ -12,7 +12,7 @@ function sum(a, b) { //eslint-disable-line
 var result = a+b;
 
 var msg = [`The sum of ${a} and ${b} is ${result}.`];
-var sumArr = [result,msg]
+var sumArr = [result,msg[0]]
 return sumArr;
 console.log(sum(4,7));
 }
@@ -55,10 +55,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    var result = 4+7+5;
-    return [result, `${a} and ${b} and ${c} sum to ${result}.`]
-var result = 4*7*5;
-return [result,`The product of ${a} and ${b} and ${c} is ${result}.`]
+    var result = sum(a, b)[0];
+    var result2 = sum(result, c)[0];
+ var result3 = multiply(a, b)[0];
+ var result4 = multiply(result3, c)[0];
+    return [result2,result4, `${a} and ${b} and ${c} sum to ${result2}.`,`The product of ${a} and ${b} and ${c} is ${result4}.`]
+
+//return [result,`The product of ${a} and ${b} and ${c} is ${result}.`]
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
