@@ -10,12 +10,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
 var result = a+b;
+
 var msg = [`The sum of ${a} and ${b} is ${result}.`];
 var sumArr = [result,msg]
 return sumArr;
-}
 console.log(sum(4,7));
-
+}
 // Here is the test for sum(); uncomment it to run it
 //4,7
  testSum();
@@ -55,12 +55,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+    var result = 4+7+5;
+    return [result, `${a} and ${b} and ${c} sum to ${result}.`]
+var result = 4*7*5;
+return [result,`The product of ${a} and ${b} and ${c} is ${result}.`]
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // 4,7,5
-// testSumAndMultiply();
+ testSumAndMultiply();
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
